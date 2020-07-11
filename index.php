@@ -30,7 +30,6 @@
 	    .cases, .death, .recovered{
 	        width: 17px;
 	    }
-	    /*an logo*/
 	</style>
 
 <?php 
@@ -39,15 +38,15 @@
     $get_data = file_get_contents($url);
     $data = json_decode($get_data);
 
-    echo "<pre>";
-    	print_r($data);
-    echo "</pre>";
+//     echo "<pre>";
+//     	print_r($data);
+//     echo "</pre>";
 
-    echo "<pre>";
-    	print_r($data->data);
-    echo "</pre>";
+//     echo "<pre>";
+//     	print_r($data->data);
+//     echo "</pre>";
 
-    echo $data->updated_at;
+//     echo $data->updated_at;
 
     foreach ($data as $rows) {
     	//echo $rows->global->cases;
@@ -55,7 +54,7 @@
     date_default_timezone_set('Asia/Ho_Chi_Minh');
   ?>
 
-<!-- <div class="container">
+ <div class="container">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4" style="border: 1px solid #dddddd; margin-top: 20px; background: white; box-shadow: 0px 3px 3px 0px #888888;">
 		<h2 style="color: red">Covid-19</h2>
@@ -110,6 +109,6 @@
 		<p style="font-size: 12px; font-weight: bold; text-align: right; padding-bottom: 15px">Thủ tướng: Nguyễn Xuân Phúc</p>
 		
 	</div>
-	<div class="col-sm-4"></div> -->
+	<div class="col-sm-4"></div>
 </body>
 </html>
